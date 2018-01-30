@@ -1,0 +1,307 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="MainApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Admin Panel</title>
+
+    <!-- include favicon icon  -->
+    <link rel="icon" href="" > 
+
+    <!-- Lightbox CSS -->
+    <!-- <link href="css/lightbox.min.css" rel="stylesheet"> -->
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Date Picker -->
+    <link href="plugins/bootstrap-datetimepicker-master/build/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+
+    <!-- Bootstrap file upload CSS -->
+    <link href="plugins/bootstrap-fileinput-master/css/fileinput.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <!--  Font CSS -->
+    <link href="themify-icons/themify-icons.css" rel="stylesheet">
+
+    <!-- include  google font  -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+    <!-- Custom CSS -->
+
+    <link href="css/top-nav.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Responsive CSS -->
+    <link href="css/responsive.css" rel="stylesheet">
+
+    <!-- Angular 
+    <script type="text/javaScript" src="js/angular.js"></script>
+    <script type="text/javaScript" src="js/dirPagination.js"></script>
+    <script type="text/javaScript" src="js/angular-sanitize.min.js"></script>
+    -->
+
+    <!-- jQuery -->
+    <script type="text/javaScript" src="js/jquery.js"></script>
+
+
+
+    <!-- includ moment for bootstrap calander -->
+    <script type="text/javascript" src="js/Moment.js"></script>
+    <script type="text/javaScript" src="plugins/bootstrap-datetimepicker-master/build/js/bootstrap-datetimepicker.min.js"></script>
+
+    <!-- texteditor Core Javascript -->
+    <script src="plugins/tinymce/js/tinymce/tinymce.min.js"></script>
+
+
+</head>
+<body data-target="dashboard" data-width="width" >
+
+
+    <div id="wrapper">
+
+        <aside id="sidebar-wrapper">
+            <div class="sidebar-nav aside-heading">
+                <h3 class="sidebar-brand"><a href="#">Admin <span>Panel</span></a></h3>
+            </div>
+
+            <div class="aside-profile">
+                <img class="nav-pic aside-img" src="images/pic-male.png"/>
+                <h5><strong>Tufayal Hossin</strong></br><span>Manager</span></h5>
+                <h5><small>Online</small></h5>
+            </div>
+            <nav>
+                <ul class="sidebar-nav">
+
+                    <li id="dashboard">
+                        <a class="hvr-sweep-to-right" href="#">
+                            <i class="ti-home"></i>
+                            Dashboard                
+                        </a>
+                    </li>
+                    <li id="theme_menu">
+                        <a href="#theme" data-toggle="collapse">
+                            <i class="ti-settings"></i>
+                            Theme Settings
+                            <span class="icon"><i class="ti-angle-down"></i></span>
+                        </a>
+
+                        <ul id="theme" class="sidebar-nav collapse aside-submenu">
+                            <li>
+                                <a href="#">
+                                    <i class="ti-angle-double-right"></i>
+                                    Logo/Icon                        
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="ti-angle-double-right"></i>
+                                    Logo/Icon 
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="dashboard">
+                        <a class="hvr-sweep-to-right" href="#">
+                            <i class="ti-home"></i>
+                            Typography                
+                        </a>
+                    </li>
+                    <li id="dashboard">
+                        <a class="hvr-sweep-to-right" href="#">
+                            <i class="ti-home"></i>
+                            Typography                
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+        </aside>
+
+    <!-- /#sidebar-wrapper -->
+
+
+
+
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <!-- top navigation start -->
+            <div class="row">
+                <nav class="col-xs-12 content-fixed-nav">
+
+                    <ul>
+                        <li>
+                            <a href="#menu-toggle" id="menu-toggle">
+                                <i class="ti-align-justify"></i>
+                            </a>
+                        </li>
+
+                        <li class="dropdown">
+                            <a id="message-menu" data-toggle="dropdown">
+                                <i class="ti-email"></i>
+                                <span class="badge badge-messages">0</span>
+                                <!-- <span class="caret"></span> -->
+                            </a>
+
+                            <ul class="dropdown-menu dropdown-menu-left" aria-labelledby="message-menu">
+                                <li class="dropdown-menu-description"><a>Messages</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">All</a></li>
+                                <li><a href="#">1</a></li>
+                            </ul>
+                        </li>
+
+                        <li style="min-width: 85px;"><a class="view-site" style="font-weight: bold;" target="_blank" href="#">View Site</a></li>
+                       
+                    </ul>
+
+
+                    <ul class="nav-inner-right">
+                        <li class="user-menu dropdown" style="width: 72px;">
+                            <a class="dropdown-toggle" type="button" data-toggle="dropdown" >
+                                <img class="nav-pic" src="images/pic-male.png"/>
+                            </a>
+
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li class="dropdown-menu-description"><a>Settings</a></li>
+                                <li><a href="">Profile</a></li>
+                                <li><a href="">Create Profile</a></li>
+                                <li><a href="">All Profile</a></li>
+                                <li class="divider"></li>
+                                <li><a href="">Log Out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- top navigation end -->
+
+            <div class="main-area">&nbsp;</div>
+
+
+
+            <!-- contant body  -->
+            <div class="container-fluid">
+                <div class="row">
+                            <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="text-center">Welcome To Dashboard !</h3>
+                        </div>
+
+                        <div class="panel-body">
+
+                        </div>
+
+                        <div class="panel-footer">&nbsp;</div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+    </div>
+    <!-- /#page-content-wrapper -->
+
+        <!-- /#wrapper -->
+
+        <!-- Bootstrap Core JavaScript -->
+        <!--script type="text/javaScript" src="js/ngScript.js"></script-->
+        <script type="text/javaScript" src="js/bootstrap.min.js"></script>
+
+        <!-- All plugins -->
+        <script type="text/javaScript" src="plugins/bootstrap-fileinput-master/js/fileinput.min.js"></script>
+        <script type="text/javaScript" src="plugins/peity/jquery.peity.min.js"></script>
+        
+        <!-- Nice Scroll -->
+        <script src="js/jquery.nicescroll.min.js"></script>
+
+        <!-- Lightbox -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/js/lightbox.min.js"></script>
+    
+        <!-- custom Core JavaScript -->
+        <script src="js/script.js"></script>
+ 
+
+        <!-- Menu Toggle Script -->
+        <script type="text/javaScript">
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+                $(this).toggleClass("icon-change");
+            });
+
+            $(function () {
+                $('#datetimepicker1').datetimepicker({
+                    format: 'YYYY-MM-DD'
+                });
+                $('#datetimepicker2').datetimepicker({
+                    format: 'YYYY-MM-DD'
+                });
+
+                // charte 
+
+                var updatingChart = $(".bar").peity("bar", {
+                width: 200,
+                height: 100
+            });
+            setInterval(function() {
+                var random = Math.round(Math.random() * 10);
+                var values = updatingChart.text().split(",");
+                values.shift();
+                values.push(random);
+
+                updatingChart.text(values.join(",")).change();
+            }, 1000);
+
+                $(".bar1").peity("bar");
+
+                $("span.pie").peity("pie");
+
+                $(".data-attributes span").peity("donut")
+
+
+                // linking between two date
+                $('#datetimepickerFrom').datetimepicker();
+                $('#datetimepickerTo').datetimepicker({
+                    useCurrent: false
+                });
+                $("#datetimepickerFrom").on("dp.change", function (e) {
+                    $('#datetimepickerTo').data("DateTimePicker").minDate(e.date);
+                });
+                $("#datetimepickerTo").on("dp.change", function (e) {
+                    $('#datetimepickerFrom').data("DateTimePicker").maxDate(e.date);
+                });
+            });
+
+            // file upload with plugin options
+            $("input#input").fileinput({
+                browseLabel: "Pick Image",
+                previewFileType: "text",
+                allowedFileExtensions: ["jpg", "jpeg", "png"],
+            });
+
+            
+
+            
+        </script>
+
+        <script>
+        $(document).on('ready', function() {
+            $("#input-4").fileinput({showCaption: false});
+        });
+        </script>
+
+    </body>
+</html>
